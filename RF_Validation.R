@@ -10,6 +10,7 @@ lib=function(){
   library(fitdistrplus)
   library("caret")
 }
+
 lib()
 Sens_Spec <- function(pred){
   prf <- performance(pred, 'sens', 'spec')
