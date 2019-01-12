@@ -217,15 +217,6 @@ print(AUC)
 mean(AUC)
 
 
-###plot Distribution histogram
-dataplot <- data.frame(AUC= c(0.864,0.848,0.899), Phase = c("Stop","Waiting","Go"))
-ggplot(dataplot, aes(x = Phase, y = AUC)) +
-  geom_bar(stat="identity", fill="lightblue", colour="black")+
-  labs(title = "AUC")+
-  labs(title = "Stop:0.864   Waiting:0.848   Go:0.899")+
-  theme(plot.title = element_text(hjust = 0.5))
-
-
 
 
 
